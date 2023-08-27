@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E8F79390-DA7D-4B3B-9B97-6D7BB39BC1F2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6FA41AC5-0E7D-4CFD-A406-64E48ABCC1F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RealText/BoxWithTouchVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "tapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "061BEEB8-CB22-4A42-8832-D918CF0F6B31"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RealText/BoxWithTouchVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "tapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3ED902A2-C70B-465B-BEA1-B255D3019F9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RealText/EnablingPhysicsVIewCOntroller/EnablingPhysicsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "addBox(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3ED902A2-C70B-465B-BEA1-B255D3019F9F - 75d455653825d3f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RealText.EnablingPhysicsViewController.addBox(__C.ARHitTestResult) -&gt; ()"
+                  moduleName = "RealText"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mykytapopov/Documents/Courses/ARKit/RealText/RealText/EnablingPhysicsVIewCOntroller/EnablingPhysicsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "3ED902A2-C70B-465B-BEA1-B255D3019F9F - 75d455653825d3f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RealText.EnablingPhysicsViewController.addBox(__C.ARHitTestResult) -&gt; ()"
+                  moduleName = "RealText"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mykytapopov/Documents/Courses/ARKit/RealText/RealText/EnablingPhysicsVIewCOntroller/EnablingPhysicsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "347FFA59-8A1B-4928-8405-8E282F46C6FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RealText/LoadingModelsViewController/LoadingModelsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "addTable(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "347FFA59-8A1B-4928-8405-8E282F46C6FA - 92d8aedbe1ab0328"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RealText.LoadingModelsViewController.addTable(__C.ARHitTestResult) -&gt; ()"
+                  moduleName = "RealText"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mykytapopov/Documents/Courses/ARKit/RealText/RealText/LoadingModelsViewController/LoadingModelsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "347FFA59-8A1B-4928-8405-8E282F46C6FA - 92d8aedbe1ab0328"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RealText.LoadingModelsViewController.addTable(__C.ARHitTestResult) -&gt; ()"
+                  moduleName = "RealText"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mykytapopov/Documents/Courses/ARKit/RealText/RealText/LoadingModelsViewController/LoadingModelsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D377207A-6BE9-411A-AD0C-BD4709F2D38F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RealText/LaunchMissileViewController/LaunchMissileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "addTable(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC09B560-6FE2-4CFC-A7C2-72AA999C8E57"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RealText/LaunchMissileViewController/LaunchMissileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "didTap(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2520A47C-8384-4527-B31F-1002CFAA47FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARKitApps/MeasurementApp/MeasurementViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "calculateTotalDistanceBetweenNodes(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2520A47C-8384-4527-B31F-1002CFAA47FD - 50badea726355be1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARKitApps.MeasurementViewController.calculateTotalDistanceBetweenNodes(Swift.Array&lt;__C.SCNNode&gt;) -&gt; ()"
+                  moduleName = "ARKitApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mykytapopov/Documents/Courses/ARKit/ARKitApps/ARKitApps/MeasurementApp/MeasurementViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "888">
+               </Location>
+               <Location
+                  uuid = "2520A47C-8384-4527-B31F-1002CFAA47FD - 50badea726355bce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARKitApps.MeasurementViewController.calculateTotalDistanceBetweenNodes(Swift.Array&lt;__C.SCNNode&gt;) -&gt; ()"
+                  moduleName = "ARKitApps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mykytapopov/Documents/Courses/ARKit/ARKitApps/ARKitApps/MeasurementApp/MeasurementViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "888">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
