@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33151EB42A9BB27E00A9E70C /* car.dae in Resources */ = {isa = PBXBuildFile; fileRef = 33151EB32A9BB27E00A9E70C /* car.dae */; };
+		33151EB62A9BB33F00A9E70C /* RemoteCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33151EB52A9BB33F00A9E70C /* RemoteCarViewController.swift */; };
 		33457BD32A9874B70001276A /* DetectingPlanesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33457BD22A9874B70001276A /* DetectingPlanesViewController.swift */; };
 		33457BD62A987F740001276A /* OverlayPlaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33457BD52A987F740001276A /* OverlayPlaneViewController.swift */; };
 		33457BD82A9880010001276A /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33457BD72A9880010001276A /* OverlayPlane.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33151EB32A9BB27E00A9E70C /* car.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = car.dae; sourceTree = "<group>"; };
+		33151EB52A9BB33F00A9E70C /* RemoteCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCarViewController.swift; sourceTree = "<group>"; };
 		33457BD22A9874B70001276A /* DetectingPlanesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectingPlanesViewController.swift; sourceTree = "<group>"; };
 		33457BD52A987F740001276A /* OverlayPlaneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlaneViewController.swift; sourceTree = "<group>"; };
 		33457BD72A9880010001276A /* OverlayPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33151EB22A9BB22600A9E70C /* RemoteControlCar */ = {
+			isa = PBXGroup;
+			children = (
+				33151EB32A9BB27E00A9E70C /* car.dae */,
+				33151EB52A9BB33F00A9E70C /* RemoteCarViewController.swift */,
+			);
+			path = RemoteControlCar;
+			sourceTree = "<group>";
+		};
 		33457BD12A9874910001276A /* DetectingPlanes */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +132,7 @@
 		33457DC22A95D89B0032ADBB /* ARKitApps */ = {
 			isa = PBXGroup;
 			children = (
+				33151EB22A9BB22600A9E70C /* RemoteControlCar */,
 				337B0EEF2A9B738E0020A777 /* Light */,
 				337B0EEC2A9B49040020A777 /* MeasurementApp */,
 				337B0EE52A9B1EC10020A777 /* ShootingTargets */,
@@ -263,6 +277,7 @@
 				33457DF42A95DEEC0032ADBB /* wood.jpeg in Resources */,
 				337B0EE42A9A3FDA0020A777 /* smoke.png in Resources */,
 				33457DC62A95D89B0032ADBB /* art.scnassets in Resources */,
+				33151EB42A9BB27E00A9E70C /* car.dae in Resources */,
 				33457DF52A95DEEC0032ADBB /* earth.jpg in Resources */,
 				337B0EE22A9A3F920020A777 /* smoke.scnp in Resources */,
 				33457DD02A95D89C0032ADBB /* LaunchScreen.storyboard in Resources */,
@@ -284,6 +299,7 @@
 				337B0EEB2A9B40860020A777 /* Utilities.swift in Sources */,
 				337B0EDB2A99FEDE0020A777 /* LoadingModelsViewController.swift in Sources */,
 				33ADE72B2A99E778006C301D /* ApplyingForcesViewController.swift in Sources */,
+				33151EB62A9BB33F00A9E70C /* RemoteCarViewController.swift in Sources */,
 				33457DC82A95D89B0032ADBB /* ViewController.swift in Sources */,
 				33457BD82A9880010001276A /* OverlayPlane.swift in Sources */,
 				33457DC42A95D89B0032ADBB /* AppDelegate.swift in Sources */,
