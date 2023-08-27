@@ -47,9 +47,6 @@
 		33457DCA2A95D89B0032ADBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33457DCC2A95D89C0032ADBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33457DCF2A95D89C0032ADBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		33457DD92A95D89C0032ADBB /* RealTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTextTests.swift; sourceTree = "<group>"; };
-		33457DE32A95D89C0032ADBB /* RealTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTextUITests.swift; sourceTree = "<group>"; };
-		33457DE52A95D89C0032ADBB /* RealTextUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTextUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33457DF22A95DEEC0032ADBB /* wood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpeg; sourceTree = "<group>"; };
 		33457DF32A95DEEC0032ADBB /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		33457DF62A95E1600032ADBB /* BoxWithTouchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxWithTouchVC.swift; sourceTree = "<group>"; };
@@ -107,8 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				33457DC22A95D89B0032ADBB /* ARKitApps */,
-				33457DD82A95D89C0032ADBB /* RealTextTests */,
-				33457DE22A95D89C0032ADBB /* RealTextUITests */,
 				33457DC12A95D89B0032ADBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,23 +141,6 @@
 				337B0EEA2A9B40860020A777 /* Utilities.swift */,
 			);
 			path = ARKitApps;
-			sourceTree = "<group>";
-		};
-		33457DD82A95D89C0032ADBB /* RealTextTests */ = {
-			isa = PBXGroup;
-			children = (
-				33457DD92A95D89C0032ADBB /* RealTextTests.swift */,
-			);
-			path = RealTextTests;
-			sourceTree = "<group>";
-		};
-		33457DE22A95D89C0032ADBB /* RealTextUITests */ = {
-			isa = PBXGroup;
-			children = (
-				33457DE32A95D89C0032ADBB /* RealTextUITests.swift */,
-				33457DE52A95D89C0032ADBB /* RealTextUITestsLaunchTests.swift */,
-			);
-			path = RealTextUITests;
 			sourceTree = "<group>";
 		};
 		337B0ED92A99FEB00020A777 /* LoadingModelsViewController */ = {

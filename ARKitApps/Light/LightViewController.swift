@@ -13,6 +13,8 @@ class LightViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    private var spotName = "SpotName"
+    
     var planes = [OverlayPlane]()
     
     override func viewDidLoad() {
@@ -24,29 +26,16 @@ class LightViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = false
         
+//        sceneView.autoenablesDefaultLighting = true
+        
         // Create a new scene
         let scene = SCNScene()
         
         // Set the scene to the view
         sceneView.scene = scene
         
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTap))
-        sceneView.addGestureRecognizer(gestureRecognizer)
-    }
-    
-    @objc private func didTap(_ recognizer: UITapGestureRecognizer) {
-        let sceneView = recognizer.view as! ARSCNView
-        let touchLocation = recognizer.location(in: sceneView)
-        
-        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
-        
-        if !hitTestResult.isEmpty {
-            
-            guard let hitResult = hitTestResult.first else {
-                return
-            }
-            addBox(hitResult)
-        }
+        addTapGesture()
+        insertSpotLight(SCNVector3(0, 1.0, 0))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,6 +55,41 @@ class LightViewController: UIViewController, ARSCNViewDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
+    }
+    
+    private func addTapGesture() {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTap))
+        sceneView.addGestureRecognizer(gestureRecognizer)
+    }
+    
+    private func insertSpotLight(_ position: SCNVector3) {
+        let spotLight = SCNLight()
+        spotLight.type = .spot
+        spotLight.spotInnerAngle = 45
+        spotLight.spotOuterAngle = 45
+        
+        let spotNode = SCNNode()
+        spotNode.name = spotName
+        spotNode.light = spotLight
+        spotNode.position = position
+        
+        spotNode.eulerAngles = SCNVector3(-Double.pi / 2, 0, -0.2)
+        sceneView.scene.rootNode.addChildNode(spotNode)
+    }
+    
+    @objc private func didTap(_ recognizer: UITapGestureRecognizer) {
+        let sceneView = recognizer.view as! ARSCNView
+        let touchLocation = recognizer.location(in: sceneView)
+        
+        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
+        
+        if !hitTestResult.isEmpty {
+            
+            guard let hitResult = hitTestResult.first else {
+                return
+            }
+            addBox(hitResult)
+        }
     }
     
     private func addBox(_ hitResult: ARHitTestResult) {
@@ -109,5 +133,12 @@ class LightViewController: UIViewController, ARSCNViewDelegate {
         }
         
         plane?.update(anchor: anchor as! ARPlaneAnchor)
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        guard let estimate = sceneView.session.currentFrame?.lightEstimate else { return }
+        
+        let spotNode = sceneView.scene.rootNode.childNode(withName: spotName, recursively: true)
+        spotNode?.light?.intensity = estimate.ambientIntensity
     }
 }
