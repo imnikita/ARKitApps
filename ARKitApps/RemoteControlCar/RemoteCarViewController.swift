@@ -15,6 +15,8 @@ class RemoteCarViewController: UIViewController, ARSCNViewDelegate {
     
     var planes = [OverlayPlane]()
     
+    private var car: Car!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,19 +26,14 @@ class RemoteCarViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = false
         
-//        sceneView.autoenablesDefaultLighting = true
-        
         let carScene = SCNScene(named: "car.dae")
-        let carNode = carScene?.rootNode.childNode(withName: "car",
-                                                   recursively: true)
+        guard let node = carScene?.rootNode.childNode(withName: "car",
+                                                      recursively: true) else { return }
         
+        car = Car(node: node)
         
         // Create a new scene
         let scene = SCNScene()
-        if let carNode = carNode {
-            carNode.position = SCNVector3(0, 0, -1)
-            scene.rootNode.addChildNode(carNode)
-        }
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -65,24 +62,31 @@ class RemoteCarViewController: UIViewController, ARSCNViewDelegate {
     }
     
     private func setupGamepad() {
-        let leftButton = UIButton(frame: CGRect(x: 0,
-                                                y: sceneView.frame.height - 50,
-                                                width: 50,
-                                                height: 50))
+        let leftButton = GameButton(frame: CGRect(x: 0,
+                                                  y: sceneView.frame.height - 50,
+                                                  width: 50,
+                                                  height: 50)) { [weak self] in
+            debugPrint("leeeeeft")
+            self?.turnLeft()
+        }
         leftButton.setTitle("Left", for: .normal)
         
         
-        let rightButton = UIButton(frame: CGRect(x: 70,
-                                                 y: sceneView.frame.height - 50,
-                                                 width: 50,
-                                                 height: 50))
+        let rightButton = GameButton(frame: CGRect(x: 70,
+                                                   y: sceneView.frame.height - 50,
+                                                   width: 50,
+                                                   height: 50)) { [weak self] in
+            self?.turnRight()
+        }
         rightButton.setTitle("Right", for: .normal)
         
-        let acceleratorButton = UIButton(frame: CGRect(x: sceneView.frame.width - 100,
-                                                       y: sceneView.frame.height - 70,
-                                                       width: 60,
-                                                       height: 60))
-
+        let acceleratorButton = GameButton(frame: CGRect(x: sceneView.frame.width - 100,
+                                                         y: sceneView.frame.height - 70,
+                                                         width: 60,
+                                                         height: 60)) { [weak self] in
+            self?.accelerate()
+        }
+        
         acceleratorButton.backgroundColor = .red
         acceleratorButton.layer.cornerRadius = 10
         acceleratorButton.layer.masksToBounds = true
@@ -98,13 +102,31 @@ class RemoteCarViewController: UIViewController, ARSCNViewDelegate {
         sceneView.addGestureRecognizer(gestureRecognizer)
     }
 
-    
     @objc private func didTap(_ recognizer: UITapGestureRecognizer) {
         let sceneView = recognizer.view as! ARSCNView
         let touchLocation = recognizer.location(in: sceneView)
-
+        
+        let hitTestResults = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
+        
+        guard !hitTestResults.isEmpty, let result = hitTestResults.first else { return }
+        
+        car.position = SCNVector3(result.worldTransform.columns.3.x,
+                                      result.worldTransform.columns.3.y + 0.1,
+                                      result.worldTransform.columns.3.z)
+        self.sceneView.scene.rootNode.addChildNode(car)
     }
     
+    private func turnLeft() {
+        car.turnLeft()
+    }
+
+    private func turnRight() {
+        car.turnRight()
+    }
+    
+    private func accelerate() {
+        car.accelerate()
+    }
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         
