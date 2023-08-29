@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33151EB62A9BB33F00A9E70C /* RemoteCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33151EB52A9BB33F00A9E70C /* RemoteCarViewController.swift */; };
 		33457BD32A9874B70001276A /* DetectingPlanesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33457BD22A9874B70001276A /* DetectingPlanesViewController.swift */; };
 		33457BD62A987F740001276A /* OverlayPlaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33457BD52A987F740001276A /* OverlayPlaneViewController.swift */; };
 		33457BD82A9880010001276A /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33457BD72A9880010001276A /* OverlayPlane.swift */; };
@@ -21,6 +22,9 @@
 		33457DF42A95DEEC0032ADBB /* wood.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33457DF22A95DEEC0032ADBB /* wood.jpeg */; };
 		33457DF52A95DEEC0032ADBB /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33457DF32A95DEEC0032ADBB /* earth.jpg */; };
 		33457DF72A95E1600032ADBB /* BoxWithTouchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33457DF62A95E1600032ADBB /* BoxWithTouchVC.swift */; };
+		3358BB862A9E51E4000B8C3C /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358BB852A9E51E4000B8C3C /* GameButton.swift */; };
+		3358BB882A9E5AA1000B8C3C /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3358BB872A9E5AA1000B8C3C /* Car.swift */; };
+		3358BB8A2A9E5C26000B8C3C /* car.dae in Resources */ = {isa = PBXBuildFile; fileRef = 3358BB892A9E5C26000B8C3C /* car.dae */; };
 		337B0EDB2A99FEDE0020A777 /* LoadingModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B0EDA2A99FEDE0020A777 /* LoadingModelsViewController.swift */; };
 		337B0EDD2A9A39030020A777 /* LaunchMissileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B0EDC2A9A39030020A777 /* LaunchMissileViewController.swift */; };
 		337B0EE02A9A3C3A0020A777 /* Missile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B0EDF2A9A3C3A0020A777 /* Missile.swift */; };
@@ -35,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33151EB52A9BB33F00A9E70C /* RemoteCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCarViewController.swift; sourceTree = "<group>"; };
 		33457BD22A9874B70001276A /* DetectingPlanesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectingPlanesViewController.swift; sourceTree = "<group>"; };
 		33457BD52A987F740001276A /* OverlayPlaneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlaneViewController.swift; sourceTree = "<group>"; };
 		33457BD72A9880010001276A /* OverlayPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
@@ -50,6 +55,9 @@
 		33457DF22A95DEEC0032ADBB /* wood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpeg; sourceTree = "<group>"; };
 		33457DF32A95DEEC0032ADBB /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		33457DF62A95E1600032ADBB /* BoxWithTouchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxWithTouchVC.swift; sourceTree = "<group>"; };
+		3358BB852A9E51E4000B8C3C /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		3358BB872A9E5AA1000B8C3C /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		3358BB892A9E5C26000B8C3C /* car.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = car.dae; sourceTree = "<group>"; };
 		337B0EDA2A99FEDE0020A777 /* LoadingModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModelsViewController.swift; sourceTree = "<group>"; };
 		337B0EDC2A9A39030020A777 /* LaunchMissileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchMissileViewController.swift; sourceTree = "<group>"; };
 		337B0EDF2A9A3C3A0020A777 /* Missile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missile.swift; sourceTree = "<group>"; };
@@ -74,6 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33151EB22A9BB22600A9E70C /* RemoteControlCar */ = {
+			isa = PBXGroup;
+			children = (
+				33151EB52A9BB33F00A9E70C /* RemoteCarViewController.swift */,
+				3358BB852A9E51E4000B8C3C /* GameButton.swift */,
+				3358BB892A9E5C26000B8C3C /* car.dae */,
+				3358BB872A9E5AA1000B8C3C /* Car.swift */,
+			);
+			path = RemoteControlCar;
+			sourceTree = "<group>";
+		};
 		33457BD12A9874910001276A /* DetectingPlanes */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +138,7 @@
 		33457DC22A95D89B0032ADBB /* ARKitApps */ = {
 			isa = PBXGroup;
 			children = (
+				33151EB22A9BB22600A9E70C /* RemoteControlCar */,
 				337B0EEF2A9B738E0020A777 /* Light */,
 				337B0EEC2A9B49040020A777 /* MeasurementApp */,
 				337B0EE52A9B1EC10020A777 /* ShootingTargets */,
@@ -263,6 +283,7 @@
 				33457DF42A95DEEC0032ADBB /* wood.jpeg in Resources */,
 				337B0EE42A9A3FDA0020A777 /* smoke.png in Resources */,
 				33457DC62A95D89B0032ADBB /* art.scnassets in Resources */,
+				3358BB8A2A9E5C26000B8C3C /* car.dae in Resources */,
 				33457DF52A95DEEC0032ADBB /* earth.jpg in Resources */,
 				337B0EE22A9A3F920020A777 /* smoke.scnp in Resources */,
 				33457DD02A95D89C0032ADBB /* LaunchScreen.storyboard in Resources */,
@@ -284,7 +305,9 @@
 				337B0EEB2A9B40860020A777 /* Utilities.swift in Sources */,
 				337B0EDB2A99FEDE0020A777 /* LoadingModelsViewController.swift in Sources */,
 				33ADE72B2A99E778006C301D /* ApplyingForcesViewController.swift in Sources */,
+				33151EB62A9BB33F00A9E70C /* RemoteCarViewController.swift in Sources */,
 				33457DC82A95D89B0032ADBB /* ViewController.swift in Sources */,
+				3358BB862A9E51E4000B8C3C /* GameButton.swift in Sources */,
 				33457BD82A9880010001276A /* OverlayPlane.swift in Sources */,
 				33457DC42A95D89B0032ADBB /* AppDelegate.swift in Sources */,
 				33457BDD2A9886080001276A /* PlacingVirtualObjectsViewController.swift in Sources */,
@@ -293,6 +316,7 @@
 				337B0EF12A9B73E30020A777 /* LightViewController.swift in Sources */,
 				337B0EEE2A9B49360020A777 /* MeasurementViewController.swift in Sources */,
 				33457BD62A987F740001276A /* OverlayPlaneViewController.swift in Sources */,
+				3358BB882A9E5AA1000B8C3C /* Car.swift in Sources */,
 				337B0EE02A9A3C3A0020A777 /* Missile.swift in Sources */,
 				33457BD32A9874B70001276A /* DetectingPlanesViewController.swift in Sources */,
 			);
